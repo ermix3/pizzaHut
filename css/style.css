@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../img/food.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+input {
+    outline: none;
+}
+
+img[alt='logo'] {
+    width: 100px;
+}
+
+.error {
+    border-color: red !important;
+    border-width: 2px !important;
+}
+
+#num-carte {
+    display: none;
+}
