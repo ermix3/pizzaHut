@@ -4,8 +4,8 @@
 
 ### Links
 
-- Repo. URL: [Descover Repo.](https://github.com/ermix3/)
-- Live Site URL: [Go Live Here](https://ermix3.github.io/)
+- Repository URL: <a href="https://github.com/ermix3/pizzaHut">GitHub Repo</a>
+- Site URL: <a href="https://ermix3.github.io/pizzaHut/">Live</a>
 
 ## My process
 first create html structure.
