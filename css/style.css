@@ -27,3 +27,24 @@ img[alt='logo'] {
 #num-carte {
     display: none;
 }
+@media screen and (max-width: 550px) {
+    section div:last-child {
+        width: 100%;
+    }
+}
+@media screen and (min-width:550px) {
+    section div:last-child {
+        width: 75%;
+    }
+}
+@media screen and (min-width: 800px) {
+    section div:last-child {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    section div:last-child {
+        width: 50%;
+    }
+}

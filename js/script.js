@@ -82,18 +82,22 @@ envoyer.addEventListener('click', () => {
 
 let footer = document.querySelector('footer');
 // ajouter la txt a la footer
-footer.appendChild(
-    document.createTextNode(
-        'Designed BY ER.Reda________________________|Copyright © 2022|________________________Tous droits réservés'
-    )
-);
+footer.innerHTML= `<p>Designed BY ER.REda</p><p>Copyright © ${new Date().getFullYear()} - Tous droits réservés</p>`;
+
 footer.classList.add(
-    'mt-0',
     'fs-6',
     'text-white',
-    'py-2',
-    'mt-3',
+    'p-2',
     'bg-primary',
-    'bg-opacity-25',
-    'text-center'
+    'bg-opacity-10',
+    'text-center',
+    'd-flex',
+    'flex-sm-row',
+    'flex-column',
+    'justify-content-between',
+    'justify-content-md-center',
+    'align-items-center'
 );
+
+// ajouter la date a la footer
+document.querySelector('footer p').classList='me-5  fw-bold';

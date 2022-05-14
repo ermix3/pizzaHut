@@ -8,11 +8,10 @@ html
         //- link(rel="stylesheet", href="../bootstrap.min.css")
         // CSS personal
         link(rel="stylesheet" href="css/style.css")
-        
     body
         section.pb-5
             h1.display-3.fw-bold.bg-primary.bg-opacity-25.text-center.text-white  #[img(src="img/logo.jpg" class='rounded-circle me-5' alt="logo")] Vente Pizza  
-            div.w-50.mx-auto.pt-3.pb-4.px-3.bg-light.bg-opacity-75.text-center.text-dark.border.rounded-3
+            div.mx-auto.pt-3.pb-4.px-3.bg-light.bg-opacity-75.text-center.text-dark.border.rounded-3
                 div.form-floating
                     input(type='text' name='nom' id="nom" placeholder='Votre Nom..' class='form-control bg-white bg-opacity-50 border-0 border-bottom border-secondary border-4 shadow-none client-info' autofocus)
                     label(for='nom' class='form-label')   Nom de client:
@@ -21,31 +20,32 @@ html
                     input(type='text' name='adresse' id='adresse' placeholder='Votre adresse..' class='form-control bg-white bg-opacity-50 border-0 border-bottom border-secondary border-4 shadow-none client-info')
                     label(class='form-label' for='adresse')   Adresser:
                 h3.mt-2.mb-1   Produits a acheter
-                table.table.table-striped.table-hover.text-center
-                    thead 
-                        tr
-                            th Nom du produit
-                            th Prix unitaire en €
-                            th Quantité
-                    tbody 
-                        tr
-                            td Pizza 4 fromages
-                            td 80
-                            td: input(type="number" min='0' name="piz4f" id="piz4f" class='form-control bg-white bg-opacity-50 border-0 border-bottom border-secondary border-4 shadow-none' placeholder="Saisir la quantite.." )
-                        tr
-                            td Pizza Herbo
-                            td 75
-                            td: input(type="number" min='0' name="pizh" id="pizh" class='form-control bg-white bg-opacity-50 border-0 border-bottom border-secondary border-4 shadow-none' placeholder="Saisir la quantite..")
-                        tr
-                            td Pizza Viande Hanchee
-                            td 100
-                            td: input(type="number" min='0' name="pizvh" id="pizvh" class='form-control bg-white bg-opacity-50 border-0 border-bottom border-secondary border-4 shadow-none' placeholder="Saisir la quantite..")
-                        tr
-                            td Pizza fruits de mer
-                            td 120
-                            td: input(type="number" min='0' name="pizfm" id="pizfm" class='form-control bg-white bg-opacity-50 border-0 border-bottom border-secondary border-4 shadow-none' placeholder="Saisir la quantite..")
+                .table-responsive
+                    table.table.table-striped.table-hover.text-center
+                        thead
+                            tr
+                                th Nom du produit
+                                th Prix unitaire en €
+                                th Quantité
+                        tbody
+                            tr
+                                td Pizza 4 fromages
+                                td 80
+                                td: input(type="number" min='0' name="piz4f" id="piz4f" class='form-control bg-white bg-opacity-50 border-0 border-bottom border-secondary border-4 shadow-none' placeholder="Saisir la quantite.." )
+                            tr
+                                td Pizza Herbo
+                                td 75
+                                td: input(type="number" min='0' name="pizh" id="pizh" class='form-control bg-white bg-opacity-50 border-0 border-bottom border-secondary border-4 shadow-none' placeholder="Saisir la quantite..")
+                            tr
+                                td Pizza Viande Hanchee
+                                td 100
+                                td: input(type="number" min='0' name="pizvh" id="pizvh" class='form-control bg-white bg-opacity-50 border-0 border-bottom border-secondary border-4 shadow-none' placeholder="Saisir la quantite..")
+                            tr
+                                td Pizza fruits de mer
+                                td 120
+                                td: input(type="number" min='0' name="pizfm" id="pizfm" class='form-control bg-white bg-opacity-50 border-0 border-bottom border-secondary border-4 shadow-none' placeholder="Saisir la quantite..")
                 h3   Paiment par: 
-                div.w-50.mx-auto
+                div.w-100.mx-auto
                     input(type='radio' name='paiment' id='carte' value='carte' class='form-check-input paiment')
                     label(class='form-label ms-2 me-3' for='carte') Carte Banquaire
                     input(type='radio' name='paiment' id='cheque' value='cheque' class='form-check-input paiment' checked)
